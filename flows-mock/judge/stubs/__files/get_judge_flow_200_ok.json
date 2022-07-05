@@ -1,3 +1,57 @@
 {
-  "message": "Hello World !"
+  "fields_mapping": {
+    "type": {
+      "source": "type"
+    },
+    "status": {
+      "source": "status"
+    },
+    "case_id": {
+      "source": "case_id"
+    },
+    "user_id": {
+      "source": "user_id"
+    }
+  },
+  "idempost_field": {
+    "type": "long",
+    "name": "id"
+  },
+  "filters": [],
+  "action_field": "user_id",
+  "team": "taa",
+  "custom_filter": false,
+  "no_action": false,
+  "listen_prediction_contingency": false,
+  "reuse_prediction_result": false,
+  "generate_idempost_field": true,
+  "prediction_retry_attempts": 0,
+  "prediction": {
+    "id": "fraud-marketplace-taa-borders-test-prediction",
+    "department": "fraudml",
+    "group": "kvstaa"
+  },
+  "fallback": null,
+  "action_context_decoration": null,
+  "action_deferred_in_minutes": null,
+  "action_destination": null,
+  "detections": null,
+  "filter": {
+    "provider": "none",
+    "provider_conf": null,
+    "big_queue_tags": null
+  },
+  "decision": {
+    "provider": "fraud_rules",
+    "provider_conf": {
+      "rule_id": "fraud-mkt-taa-borders-test-decision",
+      "version": "1.0.0"
+    }
+  },
+  "add_filter_tags_to_context": false,
+  "action_configuration": null,
+  "version": 4,
+  "max_retries": null,
+  "backoff_strategy": "EXPONENTIAL",
+  "base_backoff_time_millis": null
 }

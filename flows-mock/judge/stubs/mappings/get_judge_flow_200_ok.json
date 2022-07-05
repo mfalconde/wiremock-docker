@@ -1,10 +1,10 @@
 {
   "request": {
     "method": "GET",
-    "url": "/hello"
+    "url": "/fraud/judge/fraudml/config/flows/fraud-mkt-taa-borders-test"
   },
   "response": {
     "status": 200,
-    "bodyFileName": "hello.json"
+    "bodyFileName": "get_judge_flow_200_ok.json"
   }
 }
